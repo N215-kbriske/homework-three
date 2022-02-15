@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+  
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    max-width: $home-footer-width;
+    height: $footer-height;
+    background-color: $site-blue;
+
+    margin: 100px auto 0 auto;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+      background-color: rgba(255, 255, 255, 0);
+      border-style: solid;
+      border-width: 2px;
+      border-color: $site-white;
+  
+      .logoText {
+        color: $site-white;
+        font-family: Gill;
+        font-size: 20px;
+        letter-spacing: 2px;
+        position: absolute;
+        margin: 20px 10px 0px 0px;
+      }
+    }
+
+    .footerText {
+      font-size: 12px;
+      color: $site-white;
+      margin: auto 120px auto 120px;
+      font-family: Gill;
+    }
+
+    .socialMediaContainer {
+      // display: flex;
+      // justify-content: space-evenly;
+      // align-items: center;
+
+      i {
+        color: $site-white;
+        margin-right: 22px;
+        font-size: x-large;
+      }
+    }
+  }

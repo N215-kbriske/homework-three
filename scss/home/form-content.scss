@@ -1,0 +1,166 @@
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+
+.form-content {
+  max-width: $home-form-width;
+  min-height: 200px;
+  // background-color: lightblue;
+  margin: $center;
+
+  .bookingFormTitle {
+    font-size: 60px;
+    font-family: Proxima;
+  }
+
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .longField {
+      width: 453px;
+    }
+
+    .longerField {
+      width: 698px;
+    }
+
+    .icon {
+      margin-left: -40px;
+    }
+
+    input {
+      width: 344px;
+      height: 58px;
+      border-color: $site-blue;
+      padding-left: 10px;
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+
+  .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .formText {
+      font-size: 18px;
+      margin-top: 10px;
+      font-family: Gill;
+    }
+
+    .longField {
+      width: 453px;
+    }
+
+    .longerField {
+      width: 698px;
+      // position: relative;
+    }
+
+    .icon {
+      margin: 20px -35px;
+      position: absolute;
+      font-size: large;
+    }
+
+    input {
+      width: 344px;
+      height: 58px;
+      border-color: $site-blue;
+      padding-left: 10px;
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+
+  .row3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .formText {
+      font-size: 18px;
+      margin-top: 10px;
+      font-family: Gill;
+    }
+
+    .dropDown1 {
+      position: absolute;
+      margin-left: 195px;
+      font-size: x-large;
+    }
+    .dropDown2 {
+      position: absolute;
+      margin-left: 500px;
+      font-size: x-large;
+    }
+    .dropDown3 {
+      position: absolute;
+      margin-left: 790px;
+      font-size: x-large;
+    }
+
+    .selectAge {
+      width: 103px;
+      height: 58px;
+      border-color: $site-blue;
+      // padding-left: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 0px;
+      padding-left: 15px;
+      font-size: 18px;
+      margin-left: 20px;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+
+      .ageOption {
+        //nothing here... for now
+      }
+    }
+  }
+
+  .row4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    input {
+      width: 818px;
+      height: 192px;
+      border-color: $site-blue;
+      padding-left: 10px;
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+
+  .homeSubmit {
+    width: $home-submit-width;
+    height: $home-submit-height;
+    border-radius: $home-submit-border-radius;
+    color: $site-white;
+    border: solid;
+    background-color: $site-blue;
+    margin: 37px auto 0 auto;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Gill;
+  }
+}

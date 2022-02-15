@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 980px;
+  height: 85px;
+  margin: 0 auto;
+  border-bottom: 2px solid #FFFFFF;
+  position: relative;
+  z-index: 99;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFFFFF;
+}
+nav .logo .logoText {
+  color: #FFFFFF;
+  font-family: Gill;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 43px;
+  left: -0.5px;
+}
+nav .links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Gill;
+}
+nav .links span {
+  color: #FFFFFF;
+  margin: 0 20px 0 20px;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+.banner {
+  max-width: 1280px;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -85px auto 0 auto;
+}
+.banner .bannerContentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .bannerContentContainer .homeTitle {
+  height: 60px;
+  position: absolute;
+  top: 194px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #FFFFFF;
+  font-family: Proxima;
+}
+.banner .bannerContentContainer .homeText {
+  width: 416px;
+  height: 46px;
+  position: absolute;
+  top: 283px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  font-style: italic;
+}
+.banner a {
+  width: 122px;
+  height: 40px;
+}
+.banner a .readMore {
+  width: 122px;
+  height: 40px;
+  color: #FFFFFF;
+  border: solid;
+  border-color: #79ADDC;
+  background-color: #79ADDC;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 369px;
+  font-family: Gill;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+.form-content {
+  max-width: 818px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.form-content .bookingFormTitle {
+  font-size: 60px;
+  font-family: Proxima;
+}
+.form-content .row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-content .row1 .longField {
+  width: 453px;
+}
+.form-content .row1 .longerField {
+  width: 698px;
+}
+.form-content .row1 .icon {
+  margin-left: -40px;
+}
+.form-content .row1 input {
+  width: 344px;
+  height: 58px;
+  border-color: #79ADDC;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+.form-content .row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-content .row2 .formText {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: Gill;
+}
+.form-content .row2 .longField {
+  width: 453px;
+}
+.form-content .row2 .longerField {
+  width: 698px;
+}
+.form-content .row2 .icon {
+  margin: 20px -35px;
+  position: absolute;
+  font-size: large;
+}
+.form-content .row2 input {
+  width: 344px;
+  height: 58px;
+  border-color: #79ADDC;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+.form-content .row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-content .row3 .formText {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: Gill;
+}
+.form-content .row3 .dropDown1 {
+  position: absolute;
+  margin-left: 195px;
+  font-size: x-large;
+}
+.form-content .row3 .dropDown2 {
+  position: absolute;
+  margin-left: 500px;
+  font-size: x-large;
+}
+.form-content .row3 .dropDown3 {
+  position: absolute;
+  margin-left: 790px;
+  font-size: x-large;
+}
+.form-content .row3 .selectAge {
+  width: 103px;
+  height: 58px;
+  border-color: #79ADDC;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-left: 15px;
+  font-size: 18px;
+  margin-left: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+  /* get rid of default appearance for IE8, 9 and 10*/
+}
+.form-content .row4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-content .row4 input {
+  width: 818px;
+  height: 192px;
+  border-color: #79ADDC;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+.form-content .homeSubmit {
+  width: 813px;
+  height: 61px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  border: solid;
+  background-color: #79ADDC;
+  margin: 37px auto 0 auto;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: Gill;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+.tileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+.tileContainer .tile1 {
+  width: 236px;
+  height: 304px;
+  background-color: black;
+  margin: 55px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour-01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tileContainer .tile1 .destinationTitle {
+  width: 214px;
+  height: 60px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 60px;
+  margin: 56px auto 0 auto;
+  font-family: Proxima;
+}
+.tileContainer .tile1 .destinationPrice {
+  width: 152px;
+  height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px auto 0 auto;
+  font-family: Proxima;
+}
+.tileContainer .tile1 a {
+  width: 133px;
+  height: 40px;
+  margin-left: 50px;
+  font-family: Gill;
+}
+.tileContainer .tile1 a .learnMore {
+  margin: 58px auto 0 auto;
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #79ADDC;
+  color: #FFFFFF;
+  background-color: #79ADDC;
+  cursor: pointer;
+  font-family: Gill;
+}
+.tileContainer .tile2 {
+  width: 236px;
+  height: 304px;
+  background-color: black;
+  margin: 55px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour-02.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tileContainer .tile2 .destinationTitle {
+  width: 214px;
+  height: 60px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 60px;
+  margin: 56px auto 0 auto;
+  font-family: Proxima;
+}
+.tileContainer .tile2 .destinationPrice {
+  width: 152px;
+  height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px auto 0 auto;
+  font-family: Proxima;
+}
+.tileContainer .tile2 a {
+  width: 133px;
+  height: 40px;
+  margin-left: 50px;
+  font-family: Gill;
+}
+.tileContainer .tile2 a .learnMore {
+  margin: 58px auto 0 auto;
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #79ADDC;
+  color: #FFFFFF;
+  background-color: #79ADDC;
+  cursor: pointer;
+  font-family: Gill;
+}
+.tileContainer .tile3 {
+  width: 236px;
+  height: 304px;
+  background-color: black;
+  margin: 55px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour-03.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tileContainer .tile3 .destinationTitle {
+  width: 214px;
+  height: 60px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 60px;
+  margin: 56px auto 0 auto;
+  font-family: Proxima;
+}
+.tileContainer .tile3 .destinationPrice {
+  width: 152px;
+  height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px auto 0 auto;
+  font-family: Proxima;
+}
+.tileContainer .tile3 a {
+  width: 133px;
+  height: 40px;
+  margin-left: 50px;
+  font-family: Gill;
+}
+.tileContainer .tile3 a .learnMore {
+  margin: 58px auto 0 auto;
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #79ADDC;
+  color: #FFFFFF;
+  background-color: #79ADDC;
+  cursor: pointer;
+  font-family: Gill;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1280px;
+  height: 100px;
+  background-color: #79ADDC;
+  margin: 100px auto 0 auto;
+}
+.footer .logo {
+  width: 92px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFFFFF;
+}
+.footer .logo .logoText {
+  color: #FFFFFF;
+  font-family: Gill;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: absolute;
+  margin: 20px 10px 0px 0px;
+}
+.footer .footerText {
+  font-size: 12px;
+  color: #FFFFFF;
+  margin: auto 120px auto 120px;
+  font-family: Gill;
+}
+.footer .socialMediaContainer i {
+  color: #FFFFFF;
+  margin-right: 22px;
+  font-size: x-large;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+
+.tileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+
+  .tile1 {
+    width: $tile-width;
+    height: $tile-height;
+    background-color: black;
+    margin: 55px;
+    background-image: linear-gradient(
+        rgba($site-black, 0.5),
+        rgba($site-black, 0.5)
+      ),
+      url("../images/tour-01.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .destinationTitle {
+      width: $home-destination-title-width;
+      height: $home-destination-title-height;
+      // background-color: white;
+      color: $site-white;
+      text-align: center;
+      font-size: 60px;
+      margin: 56px auto 0 auto;
+      font-family: Proxima;
+    }
+
+    .destinationPrice {
+      width: $home-destination-price-width;
+      height: $home-destination-price-height;
+      // background-color: white;
+      color: $site-white;
+      text-align: center;
+      font-size: 30px;
+      margin: 4px auto 0 auto;
+      font-family: Proxima;
+    }
+
+    a {
+      width: $home-learnMore-width;
+      height: $home-learnMore-height;
+      // margin: 58px auto 0 auto;  //why does this not do the job?
+      margin-left: 50px;
+      font-family: Gill;
+
+      .learnMore {
+        margin: 58px auto 0 auto;
+        width: $home-learnMore-width;
+        height: $home-learnMore-height;
+        border-radius: $home-learnMore-border-radius;
+        border-style: solid;
+        border-color: $site-blue;
+        color: $site-white;
+        background-color: $site-blue;
+        cursor: pointer;
+        font-family: Gill;
+      }
+    }
+  }
+
+  .tile2 {
+    width: $tile-width;
+    height: $tile-height;
+    background-color: black;
+    margin: 55px;
+    background-image: linear-gradient(
+        rgba($site-black, 0.5),
+        rgba($site-black, 0.5)
+      ),
+      url("../images/tour-02.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .destinationTitle {
+      width: $home-destination-title-width;
+      height: $home-destination-title-height;
+      // background-color: white;
+      color: $site-white;
+      text-align: center;
+      font-size: 60px;
+      margin: 56px auto 0 auto;
+      font-family: Proxima;
+    }
+
+    .destinationPrice {
+      width: $home-destination-price-width;
+      height: $home-destination-price-height;
+      // background-color: white;
+      color: $site-white;
+      text-align: center;
+      font-size: 30px;
+      margin: 4px auto 0 auto;
+      font-family: Proxima;
+    }
+
+    a {
+      width: $home-learnMore-width;
+      height: $home-learnMore-height;
+      // margin: 58px auto 0 auto;  //why does this not do the job?
+      margin-left: 50px;
+      font-family: Gill;
+
+      .learnMore {
+        margin: 58px auto 0 auto;
+        width: $home-learnMore-width;
+        height: $home-learnMore-height;
+        border-radius: $home-learnMore-border-radius;
+        border-style: solid;
+        border-color: $site-blue;
+        color: $site-white;
+        background-color: $site-blue;
+        cursor: pointer;
+        font-family: Gill;
+      }
+    }
+  }
+
+  .tile3 {
+    width: $tile-width;
+    height: $tile-height;
+    background-color: black;
+    margin: 55px;
+    background-image: linear-gradient(
+        rgba($site-black, 0.5),
+        rgba($site-black, 0.5)
+      ),
+      url("../images/tour-03.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .destinationTitle {
+      width: $home-destination-title-width;
+      height: $home-destination-title-height;
+      // background-color: white;
+      color: $site-white;
+      text-align: center;
+      font-size: 60px;
+      margin: 56px auto 0 auto;
+      font-family: Proxima;
+    }
+
+    .destinationPrice {
+      width: $home-destination-price-width;
+      height: $home-destination-price-height;
+      // background-color: white;
+      color: $site-white;
+      text-align: center;
+      font-size: 30px;
+      margin: 4px auto 0 auto;
+      font-family: Proxima;
+    }
+
+    a {
+      width: $home-learnMore-width;
+      height: $home-learnMore-height;
+      // margin: 58px auto 0 auto;  //why does this not do the job?
+      margin-left: 50px;
+      font-family: Gill;
+
+      .learnMore {
+        margin: 58px auto 0 auto;
+        width: $home-learnMore-width;
+        height: $home-learnMore-height;
+        border-radius: $home-learnMore-border-radius;
+        border-style: solid;
+        border-color: $site-blue;
+        color: $site-white;
+        background-color: $site-blue;
+        cursor: pointer;
+        font-family: Gill;
+      }
+    }
+  }
+}

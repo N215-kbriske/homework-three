@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttc);
+}
+
+.banner {
+  max-width: $banner-footer-width;
+  height: $banner-height;
+  background-image: linear-gradient(
+      rgba($site-black, 0.5),
+      rgba($site-black, 0.5)
+    ),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -85px auto 0 auto;
+
+  .bannerContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .homeTitle {
+      // width: 226px;
+      height: 60px;
+      position: absolute;
+      top: 194px; //was 105 to get to "0"
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: $site-white;
+      font-family: Proxima;
+    }
+
+    .homeText {
+      width: $home-text-width;
+      height: $home-text-height;
+      position: absolute;
+      top: 283px; //was 105 to get to "0"
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: $site-white;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
+  a {
+    width: $home-readMore-width;
+    height: $home-readMore-height;
+    
+    .readMore {
+      width: $home-readMore-width;
+      height: $home-readMore-height;
+      color: $site-white;
+      border: solid;
+      border-color: $site-blue;
+      background-color: $site-blue;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 369px;
+      font-family: Gill;
+    }
+  }
+}
